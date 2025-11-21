@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticketing System</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="dashboard-section">
+      <div class="dashboard-items-container">
+        <div class="dashboard-item">
+          <a href="#">
+            <i class="fa-solid fa-grip"></i>
+            <p>Dashboard</p>
+          </a>
+        </div>
+
+        <div class="dashboard-item">
+          <a href="#">
+            <i class="fa-solid fa-headphones"></i>
+            <p>Agents</p>
+          </a>
+        </div>
+
+        <div class="dashboard-item">
+          <a href="#">
+            <i class="fa-solid fa-chart-line"></i>
+            <p>Activities</p>
+          </a>
+        </div>
+
+        <div class="dashboard-item">
+          <a href="#">
+            <i class="fa-solid fa-bookmark"></i>
+            <p>Saved Replies</p>
+          </a>
+        </div>
+
+        <div class="dashboard-item">
+          <a href="#">
+            <i class="fa-solid fa-robot"></i>
+            <p>Workflows</p>
+          </a>
+        </div>
+
+        <div class="dashboard-item">
+          <a href="#">
+            <i class="fa-solid fa-gear"></i>
+            <p>Settings</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="dashboard-bottom-container">
+        <div class="profile-picture">
+          <img
+            src="./Images/diego-hernandez-MSepzbKFz10-unsplash.jpg"
+            alt="profile-picture"
+            title="Profile Picture"
+          />
+        </div>
+
+        <div class="agent-name">
+          <p>David Jones</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-section">
+      <div class="hero-header-container">
+        <h2>Hello David,</h2>
+        <p>Here are the things happening in your support</p>
+      </div>
+
+      <div class="hero-body-container">
+        <div class="hero-data-container">
+          <div class="hero-data-item">
+            <p>Open tickets</p>
+            <h1>20</h1>
+          </div>
+
+          <div class="hero-data-item">
+            <p>Awaiting reply</p>
+            <h1>24</h1>
+          </div>
+
+          <div class="hero-data-item">
+            <p>Active tickets</p>
+            <h1>29</h1>
+          </div>
+
+          <div class="hero-data-item">
+            <p>Resolved tickets</p>
+            <h1>05</h1>
+          </div>
+        </div>
+
+        <div class="hero-ticket-metadata-container">
+          <div class="ticket-metadata-item-group">
+            <label for="status">Status</label>
+            <select name="status" id="status">
+              <option value="waiting">Waiting</option>
+              <option value="open">Open</option>
+              <option value="pending">Pending</option>
+              <option value="on-hold">On-Hold</option>
+            </select>
+          </div>
+
+          <div class="ticket-metadata-item-group">
+            <label for="priority">Priority</label>
+            <select name="priority" id="priority">
+              <option value="critical">Critical</option>
+              <option value="waiting">Open</option>
+              <option value="waiting">Pending</option>
+              <option value="waiting">On-Hold</option>
+            </select>
+          </div>
+
+          <div class="ticket-metadata-item-group">
+            <label for="assignee">Assignee</label>
+            <select name="assignee" id="assignee">
+              <option value="osas-iyere">Osas Iyere</option>
+              <option value="obinna-ihe">Obinne Ihe</option>
+              <option value="matthew-okolie">Matthew Okolie</option>
+              <option value="emmanuel-ukete">Emmanuel Ukete</option>
+              <option value="emmanuel-iyere">Emmanuel Iyere</option>
+              <option value="donald-ojemba">Donald Ojemba</option>
+            </select>
+          </div>
+
+          <div class="ticket-metadata-item-group">
+            <label for="created-date">Created Date</label>
+            <input type="date" id="created-date" name="created-date" />
+          </div>
+
+          <button>Reset Filters</button>
+        </div>
+
+        <div class="hero-table-container">
+          <table class="ticket-table">
+            <tr>
+              <th>
+                <input type="checkbox" />
+              </th>
+              <th>Title</th>
+              <th>Status</th>
+              <th>Priority</th>
+              <th>Assignee</th>
+              <th>Updated at</th>
+              <th>Created at</th>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td class="table-title">
+                <div class="ticket-item-subject-id">
+                  <h3>Product not received</h3>
+                  <h3 class="ticket-id">#233</h3>
+                </div>
+                <p>Hello, I ordered but did not receive...</p>
+                <a href="#">Michael Vaughn</a>
+              </td>
+
+              <td class="table-status">
+                <p>Awaiting</p>
+                <a href="#">
+                  <div class="table-status-arrow">
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                </a>
+              </td>
+
+              <td class="ticket-priority">
+                <i class="fa-solid fa-square-full medium-priority-square"></i>
+                <p>Medium</p>
+                <a href="#">
+                  <div class="table-priority-arrow">
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                </a>
+              </td>
+
+              <td class="table-assignee">
+                <div class="table-assignee-image">
+                  <img
+                    src="./Images/diego-hernandez-MSepzbKFz10-unsplash.jpg"
+                    title="assignee-picture"
+                    alt="assignee-picture"
+                  />
+                </div>
+                <p>David</p>
+                <a href="#">
+                  <div class="table-assignee-arrow">
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                </a>
+              </td>
+
+              <td class="table-updated">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <p>3h ago</p>
+              </td>
+
+              <td>
+                <i class="fa-regular fa-clock"></i>
+                <p>2 days ago</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td class="table-title">
+                <div class="ticket-item-subject-id">
+                  <h3>Faulty Product</h3>
+                  <h3 class="ticket-id">#232</h3>
+                </div>
+                <p>Hello, I ordered but did not receive...</p>
+                <a href="#">Robert Fox</a>
+              </td>
+
+              <td class="table-status">
+                <p>Closed</p>
+                <a href="#">
+                  <div class="table-status-arrow">
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                </a>
+              </td>
+
+              <td class="ticket-priority">
+                <i class="fa-solid fa-square-full low-priority-square"></i>
+                <p>Low</p>
+                <div class="table-priority-arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </td>
+
+              <td class="table-assignee">
+                <div class="table-assignee-image">
+                  <img
+                    src="./Images/diego-hernandez-MSepzbKFz10-unsplash.jpg"
+                    title="assignee-picture"
+                    alt="assignee-picture"
+                  />
+                </div>
+                <p>David</p>
+                <div class="table-assignee-arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </td>
+
+              <td class="table-updated">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <p>4h ago</p>
+              </td>
+
+              <td>
+                <i class="fa-regular fa-clock"></i>
+                <p>2 days ago</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td class="table-title">
+                <div class="ticket-item-subject-id">
+                  <h3>Hey, I need an emergency</h3>
+                  <h3 class="ticket-id">#230</h3>
+                </div>
+                <p>Hello, I ordered but did not receive...</p>
+                <a href="#">Olie Pepe</a>
+              </td>
+
+              <td class="table-status">
+                <p>In Progress</p>
+                <div class="table-status-arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </td>
+
+              <td class="ticket-priority">
+                <i class="fa-solid fa-square-full high-priority-square"></i>
+                <p>High</p>
+                <div class="table-priority-arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </td>
+
+              <td class="table-assignee">
+                <div class="table-assignee-image">
+                  <img
+                    src="./Images/diego-hernandez-MSepzbKFz10-unsplash.jpg"
+                    title="assignee-picture"
+                    alt="assignee-picture"
+                  />
+                </div>
+                <p>David</p>
+                <div class="table-assignee-arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </td>
+
+              <td class="table-updated">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <p>9h ago</p>
+              </td>
+
+              <td>
+                <i class="fa-regular fa-clock"></i>
+                <p>01 Jan 23</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td class="table-title">
+                <div class="ticket-item-subject-id">
+                  <h3>My product is faulty</h3>
+                  <h3 class="ticket-id">#231</h3>
+                </div>
+                <p>Hello, I ordered but did not receive...</p>
+                <a href="#">Williams Jones</a>
+              </td>
+
+              <td class="table-status">
+                <p>Open</p>
+                <div class="table-status-arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </td>
+
+              <td class="ticket-priority">
+                <i class="fa-solid fa-square-full critical-priority-square"></i>
+                <p>Critical</p>
+                <div class="table-priority-arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </td>
+
+              <td class="table-assignee">
+                <div class="table-assignee-image">
+                  <img
+                    src="./Images/diego-hernandez-MSepzbKFz10-unsplash.jpg"
+                    title="assignee-picture"
+                    alt="assignee-picture"
+                  />
+                </div>
+
+                <p>David</p>
+                <div class="table-assignee-arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </td>
+
+              <td class="table-updated">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <p>1d ago</p>
+              </td>
+
+              <td>
+                <i class="fa-regular fa-clock"></i>
+                <p>29 Feb 23</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td class="table-title">
+                <div class="ticket-item-subject-id">
+                  <h3>Why am I getting an error?</h3>
+                  <h3 class="ticket-id">#229</h3>
+                </div>
+                <p>Hello, I ordered but did not receive...</p>
+                <a href="#">Debby Phillips</a>
+              </td>
+
+              <td class="table-status">
+                <p>Open</p>
+                <div class="table-status-arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </td>
+
+              <td class="ticket-priority">
+                <i class="fa-solid fa-square-full medium-priority-square"></i>
+                <p>Medium</p>
+                <div class="table-priority-arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </td>
+
+              <td class="table-assignee">
+                <div class="table-assignee-image">
+                  <img
+                    src="./Images/diego-hernandez-MSepzbKFz10-unsplash.jpg"
+                    title="assignee-picture"
+                    alt="assignee-picture"
+                  />
+                </div>
+
+                <p>David</p>
+                <div class="table-assignee-arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </td>
+
+              <td class="table-updated">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <p>3d ago</p>
+              </td>
+
+              <td>
+                <i class="fa-regular fa-clock"></i>
+                <p>20 Feb 23</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td class="table-title">
+                <div class="ticket-item-subject-id">
+                  <h3>This product has never worked for me</h3>
+                  <h3 class="ticket-id">#228</h3>
+                </div>
+                <p>Hello, I ordered but did not receive...</p>
+                <a href="#">Sam Drinkwater</a>
+              </td>
+
+              <td class="table-status">
+                <p>Closed</p>
+                <div class="table-status-arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </td>
+
+              <td class="ticket-priority">
+                <i class="fa-solid fa-square-full low-priority-square"></i>
+                <p>Low</p>
+                <div class="table-priority-arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </td>
+
+              <td class="table-assignee">
+                <div class="table-assignee-image">
+                  <img
+                    src="./Images/diego-hernandez-MSepzbKFz10-unsplash.jpg"
+                    title="assignee-picture"
+                    alt="assignee-picture"
+                  />
+                </div>
+
+                <p>David</p>
+                <div class="table-assignee-arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </td>
+
+              <td class="table-updated">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <p>1 week ago</p>
+              </td>
+
+              <td>
+                <i class="fa-regular fa-clock"></i>
+                <p>15 Feb 23</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

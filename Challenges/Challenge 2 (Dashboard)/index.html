@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 2</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="dashboard">
+      <div class="left-dashboard">
+        <button>Open Drawer</button>
+      </div>
+
+      <div class="right-dashboard">
+        <div class="right-dashboard-main">
+          <div class="dashboard-heading">
+            <div class="dashboard-heading-header-icon">
+              <div class="header">
+                <h3>New project</h3>
+              </div>
+
+              <div class="header-icon">
+                <i class="fa-solid fa-x"></i>
+              </div>
+            </div>
+
+            <div class="header-text">
+              <p>
+                Get started by filling in the information below to create your
+                new project.
+              </p>
+            </div>
+          </div>
+
+          <div class="form-container">
+            <form class="project-form">
+              <div class="project-form-item">
+                <label for="project-name">Project name</label>
+                <input type="text" id="project-name" name="project-name" />
+              </div>
+
+              <div class="project-form-item">
+                <label for="project-description">Description</label>
+                <textarea
+                  id="project-description"
+                  name="project-description"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+
+          <div class="member-container">
+            <div class="member-container-title">
+              <p>Team members</p>
+            </div>
+
+            <div class="member-container-picture">
+              <div class="member-profile-picture">
+                <img
+                  src="./Images/alexander-hipp-iEEBWgY_6lA-unsplash.jpg"
+                  alt="Alex's DP"
+                />
+              </div>
+
+              <div class="member-profile-picture">
+                <img
+                  src="./Images/diego-hernandez-MSepzbKFz10-unsplash.jpg"
+                  alt="Diego's DP"
+                />
+              </div>
+
+              <div class="member-profile-picture">
+                <img
+                  src="./Images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg"
+                  alt="Jake's DP"
+                />
+              </div>
+
+              <div class="member-profile-picture">
+                <img
+                  src="./Images/luis-villasmil-6qf1uljGpU4-unsplash.jpg"
+                  alt="Luis's DP"
+                />
+              </div>
+
+              <div class="member-profile-picture">
+                <img
+                  src="./Images/sigmund-jzz_3jWMzHA-unsplash.jpg"
+                  alt="Sig's DP"
+                />
+              </div>
+
+              <div class="member-profile-picture">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="privacy-container">
+            <div class="privacy">
+              <p>Privacy</p>
+            </div>
+            <div class="privacy-item">
+              <input type="radio" id="public" name="privacy" value="public" />
+              <label for="public">Public access</label>
+              <p>Everyone with the link will see this project.</p>
+            </div>
+
+            <div class="privacy-item">
+              <input
+                type="radio"
+                id="private-to-members"
+                name="privacy"
+                value="private-to-members"
+              />
+              <label for="private-to-members">Private to project members</label>
+              <p>Only members of this project would be able to access.</p>
+            </div>
+
+            <div class="privacy-item">
+              <input
+                type="radio"
+                id="private-to-you"
+                name="privacy"
+                value="private-to-you"
+              />
+              <label for="private-to-you">Private to you</label>
+              <p>You are the only one able to access this project.</p>
+            </div>
+          </div>
+
+          <!-- <div class="copy-link-container"> -->
+          <a href="#" class="copy-link">
+            <div class="link-icon">
+              <i class="fa-solid fa-link"></i>
+            </div>
+
+            <div class="copy-link-text">
+              <p>Copy link</p>
+            </div>
+          </a>
+          <!-- </div> -->
+
+          <div class="learn-more-container">
+            <div class="learn-more-icon">
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+
+            <div class="learn-more-info-container">
+              <p>Learn more about sharing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons-container">
+          <button class="cancel-button">Cancel</button>
+
+          <button class="save-button">Save</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

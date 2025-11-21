@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <div class="logo-container">
+        <img src="./Images/site logo 2.png" alt="Site Logo" title="Site Logo" />
+      </div>
+    </section>
+
+    <section class="form-body">
+      <div class="body-content-container">
+        <div class="login-container">
+          <div class="login-form-title-texts">
+            <h1>Welcome Back</h1>
+            <p>Sign in to your account</p>
+          </div>
+
+          <form class="form">
+            <div class="input-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Enter your email address"
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                placeholder="Enter your password"
+              />
+              <button
+                type="button"
+                class="password-toggle"
+                id="passwordToggle"
+                aria-label="Toggle password visibility"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+
+            <div class="remember-me-forgot-password-container">
+              <div class="remember-me-input-group">
+                <input
+                  type="checkbox"
+                  id="remember-me"
+                  name="remember-me"
+                  value="remember-me"
+                />
+                <label for="remember-me">Remember me</label>
+              </div>
+
+              <a href="#">Forgot password?</a>
+            </div>
+
+            <div class="button-container">
+              <button type="reset">Sign In</button>
+            </div>
+          </form>
+
+          <div class="form-login-bottom-section">
+            <div class="divider">
+              <span>or continue with</span>
+            </div>
+
+            <div class="google-github-options-container">
+              <a href="#">
+                <div class="sso-container">
+                  <i class="fa-brands fa-google"></i>
+                  <p>Google</p>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="sso-container">
+                  <i class="fa-brands fa-github"></i>
+                  <p>GitHub</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="sign-up-container">
+              <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="./Images/Site Image 3.jpg"
+            alt="Person gyming"
+            title="Site Image"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

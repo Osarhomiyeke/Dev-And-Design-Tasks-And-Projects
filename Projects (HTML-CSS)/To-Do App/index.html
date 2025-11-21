@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="left-sidebar-section">
+      <div class="left-sidebar-top">
+        <div class="menu-and-search-container">
+          <div class="menu-container">
+            <h3>Menu</h3>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <div class="left-sidebar-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="search"
+              placeholder="Search"
+              id="search"
+              name="search"
+            />
+          </div>
+        </div>
+
+        <div class="left-sidebar-tasks-container">
+          <div class="left-sidebar-task-name">
+            <p>TASKS</p>
+          </div>
+
+          <div class="left-sidebar-task-item">
+            <a href="#">
+              <div class="left-sidebar-task-item-left">
+                <i class="fa-solid fa-forward"></i>
+                <p>Upcoming</p>
+              </div>
+
+              <div class="left-sidebar-task-item-right">
+                <p>12</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="left-sidebar-task-item">
+            <a href="#">
+              <div class="left-sidebar-task-item-left">
+                <i class="fa-solid fa-list"></i>
+                <p>Today</p>
+              </div>
+
+              <div class="left-sidebar-task-item-right">
+                <p>5</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="left-sidebar-task-item">
+            <a href="#">
+              <div class="left-sidebar-task-item-left">
+                <i class="fa-solid fa-calendar"></i>
+                <p>Calendar</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="left-sidebar-task-item">
+            <a href="#">
+              <div class="left-sidebar-task-item-left">
+                <i class="fa-solid fa-note-sticky"></i>
+                <p>Sticky Wall</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="left-sidebar-lists-container">
+          <div class="left-sidebar-list-name">
+            <p>LISTS</p>
+          </div>
+
+          <div class="left-sidebar-list-item">
+            <a href="#">
+              <div class="left-sidebar-list-item-left-1">
+                <i class="fa-solid fa-square-full"></i>
+                <p>Personal</p>
+              </div>
+
+              <div class="left-sidebar-list-item-right">
+                <p>3</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="left-sidebar-list-item">
+            <a href="#">
+              <div class="left-sidebar-list-item-left-2">
+                <i class="fa-solid fa-square-full"></i>
+                <p>Work</p>
+              </div>
+
+              <div class="left-sidebar-list-item-right">
+                <p>6</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="left-sidebar-list-item">
+            <a href="#">
+              <div class="left-sidebar-list-item-left-3">
+                <i class="fa-solid fa-square-full"></i>
+                <p>Gym</p>
+              </div>
+
+              <div class="left-sidebar-list-item-right">
+                <p>3</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="add-new-list-container">
+            <a href="#">
+              <i class="fa-solid fa-plus"></i>
+              <p>Add New List</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="left-sidebar-tags-container">
+          <div class="left-sidebar-tag-name">
+            <p>TAGS</p>
+          </div>
+
+          <div class="left-sidebar-tags">
+            <a href="#">
+              <div class="tag-item">
+                <p>Tag 1</p>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="tag-item">
+                <p>Tag 2</p>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="add-tag-item">
+                <p>+ Add Tag</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="left-sidebar-bottom">
+        <div class="left-sidebar-bottom-item">
+          <a href="#">
+            <i class="fa-solid fa-sliders"></i>
+            <p>Settings</p>
+          </a>
+        </div>
+
+        <div class="left-sidebar-bottom-item">
+          <a href="#">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <p>Sign out</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="middle-section">
+      <div class="middle-section-heading">
+        <h1>Today</h1>
+        <p>5</p>
+      </div>
+
+      <div class="middle-section-body">
+        <div class="middle-add-new-task-container">
+          <a href="#">
+            <i class="fa-solid fa-plus"></i>
+            <p>Add New Task</p>
+          </a>
+        </div>
+
+        <div class="middle-tasks-container">
+          <div class="middle-task-item">
+            <div class="middle-task-input-group">
+              <input type="checkbox" />
+            </div>
+
+            <div class="middle-task-input-label">
+              <a href="#">
+                <p>Research content ideas</p>
+                <i class="fa-solid fa-greater-than"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="middle-task-item">
+            <div class="middle-task-input-group">
+              <input type="checkbox" />
+            </div>
+
+            <div class="middle-task-input-label">
+              <a href="#">
+                <p>Create a database of guest authors</p>
+                <i class="fa-solid fa-greater-than"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="middle-task-item">
+            <div class="middle-task-input-group">
+              <input type="checkbox" />
+            </div>
+
+            <div class="middle-task-input-label">
+              <a href="#">
+                <p>Renew driver's license</p>
+                <i class="fa-solid fa-greater-than"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="middle-task-item">
+            <div class="middle-task-input-group">
+              <input type="checkbox" />
+            </div>
+
+            <div class="middle-task-input-label">
+              <a href="#">
+                <p>Consult accountant</p>
+                <i class="fa-solid fa-greater-than"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="middle-task-item">
+            <div class="middle-task-input-group">
+              <input type="checkbox" />
+            </div>
+
+            <div class="middle-task-input-label">
+              <a href="#">
+                <p>Print business card</p>
+                <i class="fa-solid fa-greater-than"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="right-sidebar-section">
+      <div class="right-sidebar-top-section">
+        <div class="right-section-task-container">
+          <h3>Task:</h3>
+
+          <div class="right-section-task-fields">
+            <input type="text" placeholder="Task name" name="task name" />
+            <textarea
+              placeholder="Description"
+              name="task description"
+            ></textarea>
+          </div>
+
+          <div class="right-section-task-lists">
+            <p>List</p>
+
+            <div class="task-list-select-field">
+              <select name="task-list" id="task-list">
+                <option selected disabled>Select a list</option>
+                <option value="personal">Personal</option>
+                <option value="work">Work</option>
+                <option value="gym">Gym</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="right-section-task-due-date">
+            <p>Due date</p>
+
+            <div class="task-due-date-field">
+              <input type="date" id="due-date" name="due-date" />
+            </div>
+          </div>
+
+          <div class="right-section-task-tags">
+            <p>Tags</p>
+
+            <div class="right-section-task-tags-value">
+              <p class="right-section-tag">Tag 1</p>
+              <p class="right-section-add-tag">+ Add tag</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-section-subtasks-container">
+          <h3>Subtasks:</h3>
+          <div class="add-new-subtask-container">
+            <a href="#">
+              <i class="fa-solid fa-plus"></i>
+              <p>Add New Subtask</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-sidebar-bottom-section">
+        <button class="delete-task-button">Delete Task</button>
+        <button class="save-changes-button">Save Changes</button>
+      </div>
+    </section>
+  </body>
+</html>

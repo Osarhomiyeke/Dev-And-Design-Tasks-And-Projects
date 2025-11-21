@@ -1,0 +1,16 @@
+h1 {
+  color: green;
+}
+
+.label {
+  color: blueviolet;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+  background-color: burlywood;
+}
+
+.button {
+  background-color: yellow;
+}

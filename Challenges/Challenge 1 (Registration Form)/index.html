@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <div>
+        <h1>Orijin Software Development Webinar Registration</h1>
+      </div>
+
+      <!-- Questions -->
+      <form>
+        <ul>
+          <!-- Full Name -->
+          <div>
+            <li>
+              <div>
+                <label for="fullname" class="label">Full Name</label>
+              </div>
+
+              <div>
+                <input
+                  type="text"
+                  id="fullname"
+                  name="fullname"
+                  placeholder="Enter full name here."
+                  required
+                />
+              </div>
+            </li>
+          </div>
+          <br />
+
+          <!-- Email Address-->
+          <div>
+            <li>
+              <div>
+                <label for="email" class="label">Email Address</label>
+              </div>
+
+              <div>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter email address here."
+                  required
+                />
+              </div>
+            </li>
+          </div>
+          <br />
+
+          <!-- Session -->
+          <div>
+            <li>
+              <div>
+                <label for="session" class="label">Session</label>
+              </div>
+
+              <div>
+                <select id="session" name="session" required>
+                  <option value="" disabled selected>Select Session</option>
+                  <option value="html">HTML</option>
+                  <option value="css">CSS</option>
+                  <option value="javascript">Javascript</option>
+                  <option value="python">Python</option>
+                  <option value="c++">C++</option>
+                </select>
+              </div>
+            </li>
+          </div>
+          <br />
+
+          <!-- Preferred Date-->
+          <div>
+            <li>
+              <div>
+                <label for="preferred-date" class="label">Preferred Date</label>
+              </div>
+
+              <div>
+                <input
+                  type="date"
+                  id="preferred-date"
+                  name="preferred-date"
+                  required
+                />
+              </div>
+            </li>
+          </div>
+          <br />
+
+          <!-- Dietary Restrictions-->
+          <div>
+            <li>
+              <div>
+                <label for="dietary-restrictions" class="label"
+                  >Dietary Restrictions</label
+                >
+              </div>
+
+              <div>
+                <textarea
+                  id="dietary-restrictions"
+                  name="dietary-restrictions"
+                  placeholder="Specify any dietary restrictions you may have"
+                  required
+                ></textarea>
+              </div>
+            </li>
+          </div>
+          <br />
+
+          <!-- Submit -->
+          <div>
+            <button type="submit" class="button">Submit</button>
+          </div>
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>
