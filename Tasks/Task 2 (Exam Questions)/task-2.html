@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+  </head>
+  <body>
+    <div>
+      <!-- The name of the school -->
+      <div>
+        <h1>Osas University of Engineering</h1>
+      </div>
+
+      <form>
+        <!-- Container for the student information -->
+        <div>
+          <div>
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+              <option value="" disabled selected>Select dept.</option>
+              <option value="computer-engineering">Computer Engineering</option>
+              <option value="electrical-engineering">
+                Electrical Engineering
+              </option>
+              <option value="civil-engineering">Civil Engineering</option>
+              <option value="mechanical-engineering">
+                Mechanical Engineering
+              </option>
+              <option value="petroleum-engineering">
+                Petroleum Engineering
+              </option>
+            </select>
+          </div>
+
+          <div>
+            <label for="course-code">Course Code:</label>
+            <input
+              type="text"
+              id="course-code"
+              name="course-code"
+              placeholder="Enter course code"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="registration-number">Reg No.:</label>
+            <input
+              type="number"
+              id="registration-number"
+              name="registration-number"
+              placeholder="Enter reg no."
+              required
+            />
+          </div>
+
+          <div>
+            <label for="fullname">Full Name:</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Enter full name."
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              name="email-address"
+              placeholder="Enter email address."
+              required
+            />
+          </div>
+        </div>
+        <br />
+
+        <!-- Container for the instructions -->
+        <div>
+          <div>
+            <h3>Read all instructions properly</h3>
+          </div>
+          <div>
+            <ul>
+              <li>Answer all questions.</li>
+              <li>For multi-select questions, select all that apply.</li>
+              <li>
+                For questions that require you to explain, ensure you use a
+                minimum of 30 words.
+              </li>
+              <li>
+                Ensure you have filled up all the student information requested
+                above.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h3>Good luck!</h3>
+        </div>
+
+        <!-- Container for the questions -->
+        <div>
+          <ol>
+            <!-- Question 1 -->
+            <li>
+              <div>
+                <p>What is the unit for measuring Force?</p>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="second"
+                  name="question-1"
+                  value="second"
+                />
+                <label for="second">Second</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="newton"
+                  name="question-1"
+                  value="newton"
+                />
+                <label for="newton">Newton</label>
+              </div>
+
+              <div>
+                <input type="radio" id="watt" name="question-1" value="watt" />
+                <label for="watt">Watt</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="joule"
+                  name="question-1"
+                  value="joule"
+                />
+                <label for="joule">Joule</label>
+              </div>
+            </li>
+            <br />
+
+            <!-- Question 2 -->
+            <li>
+              <div>
+                <p>What is the chemical symbol for Potassium?</p>
+              </div>
+
+              <div>
+                <input type="radio" id="na" name="question-2" value="na" />
+                <label for="na">Na</label>
+              </div>
+
+              <div>
+                <input type="radio" id="ca" name="question-2" value="ca" />
+                <label for="ca">Ca</label>
+              </div>
+
+              <div>
+                <input type="radio" id="p" name="question-2" value="p" />
+                <label for="p">P</label>
+              </div>
+
+              <div>
+                <input type="radio" id="k" name="question-2" value="k" />
+                <label for="k">K</label>
+              </div>
+            </li>
+            <br />
+
+            <!-- Question 3 -->
+            <li>
+              <div>
+                <p>Which of these are valid programming languages?</p>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="dutch"
+                  name="question-3"
+                  value="dutch"
+                />
+                <label for="dutch">Dutch</label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="python"
+                  name="question-3"
+                  value="python"
+                />
+                <label for="python">Python</label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="javascript"
+                  name="question-3"
+                  value="javascript"
+                />
+                <label for="javascript">Javascript</label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="latin"
+                  name="question-3"
+                  value="latin"
+                />
+                <label for="latin">Latin</label>
+              </div>
+            </li>
+            <br />
+
+            <!-- Question 4 -->
+            <li>
+              <div>
+                <p>
+                  Ohm's law defines the relationship between which of these in
+                  an electrical circuit?
+                </p>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="current"
+                  name="question-4"
+                  value="current"
+                />
+                <label for="current">Current</label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="resistance"
+                  name="question-4"
+                  value="resistance"
+                />
+                <label for="resistance">Resistance</label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="shock"
+                  name="question-4"
+                  value="shock"
+                />
+                <label for="shock">Shock</label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="voltage"
+                  name="question-4"
+                  value="voltage"
+                />
+                <label for="voltage">Voltage</label>
+              </div>
+            </li>
+            <br /><br />
+
+            <!-- Question 5 -->
+            <li>
+              <div>
+                <label for="concept-of-inertia"
+                  >Explain the concept of Inertia</label
+                >
+              </div>
+              <br />
+
+              <div>
+                <textarea
+                  id="concept-of-inertia"
+                  name="question-5"
+                  placeholder="Type your explanation here."
+                ></textarea>
+              </div>
+            </li>
+            <br />
+
+            <!-- Question 6 -->
+            <li>
+              <div>
+                <p>What is the full meaning of CSS?</p>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="cascade-style-sheets"
+                  name="question-6"
+                  value="cascade-style-sheets"
+                />
+                <label for="cascade-style-sheets">Cascade Style Sheets</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="capacity-styling-syntax"
+                  name="question-6"
+                  value="capacity-styling-syntax"
+                />
+                <label for="capacity-styling-syntax"
+                  >Capacity Styling Syntax</label
+                >
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="cascading-sheet-styling"
+                  name="question-6"
+                  value="cascading-sheet-styling"
+                />
+                <label for="cascading-sheet-styling"
+                  >Cascading Sheet Styling</label
+                >
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="cascading-style-sheets"
+                  name="question-6"
+                  value="cascading-style-sheets"
+                />
+                <label for="cascading-style-sheets"
+                  >Cascading Style Sheets</label
+                >
+              </div>
+            </li>
+            <br />
+
+            <!-- Question 7 -->
+            <li>
+              <div>
+                <p>
+                  What is the name for the naturally occurring liquid found
+                  beneath the earth's surface that can be refined into fuel?
+                </p>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="crude-oil"
+                  name="question-7"
+                  value="crude-oil"
+                />
+                <label for="crude-oil">Crude Oil</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="molten-magma"
+                  name="question-7"
+                  value="molten-magma"
+                />
+                <label for="molten-magma">Molten Magma</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="water"
+                  name="question-7"
+                  value="water"
+                />
+                <label for="water">Water</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="mercury"
+                  name="question-7"
+                  value="mercury"
+                />
+                <label for="mercury">Mercury</label>
+              </div>
+            </li>
+            <br />
+
+            <!-- Question 8 -->
+            <li>
+              <div>
+                <p>Which of these are ferrous metals?</p>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="steel"
+                  name="question-8"
+                  value="steel"
+                />
+                <label for="steel">Steel</label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="cast-iron"
+                  name="question-8"
+                  value="cast-iron"
+                />
+                <label for="cast-iron">Cast Iron</label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="nickel"
+                  name="question-8"
+                  value="nickel"
+                />
+                <label for="nickel">Nickel</label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="aluminium"
+                  name="question-8"
+                  value="aluminium"
+                />
+                <label for="aluminium">Aluminium</label>
+              </div>
+            </li>
+            <br /><br />
+
+            <!-- Question 9 -->
+            <li>
+              <div>
+                <label for="chemical-sublimation"
+                  >Explain chemical sublimation</label
+                >
+              </div>
+              <br />
+
+              <div>
+                <textarea
+                  id="chemical-sublimation"
+                  name="question-9"
+                  placeholder="Type your explanation here."
+                ></textarea>
+              </div>
+            </li>
+            <br /><br />
+
+            <!-- Question 10 -->
+            <li>
+              <div>
+                <label for="difference-between-beam-and-column"
+                  >What is the difference between a beam and a column in a
+                  building?</label
+                >
+              </div>
+              <br />
+
+              <div>
+                <textarea
+                  id="difference-between-beam-and-column"
+                  name="question-10"
+                  placeholder="Type your answer here."
+                ></textarea>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Container for the submit button -->
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
