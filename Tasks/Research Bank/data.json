@@ -1,0 +1,9 @@
+{
+    "location" : "Nigeria",
+    "name" : "Joseph",
+    "age" : 18,
+    "IsLoggedin" : true,
+    "moreData" : {
+        "city" : "Nairobi"
+    }
+}
